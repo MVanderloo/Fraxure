@@ -1,16 +1,9 @@
 import React from "react";
+import { SECResultRow } from "./components/SearchResults";
 import "./styles.css";
-import Results from "./Results";
-import Search from "./Search";
-// import Search from './Search';
+// import Results from "./Results";
+// import Search from "./Search";
 
-function App() {
-  return (
-    <div id="pagedisplay" className="App">
-      <Search />
-      <Results />
-    </div>
-  );
+export default function App() {
+  return <SECResultRow />;
 }
-
-export default App;
