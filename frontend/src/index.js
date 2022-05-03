@@ -26,30 +26,48 @@ searcher.addEventListener("click", function () {
   var pre = document.getElementById("pre");
   var post = document.getElementById("post");
 
-  
-  
   // WORKS
   // var url = "localhost:5000/tagtog/init/" + username.value + "/" + password.value + "/" + project.value + "/" + type.value + "/" + cik.value;
-  
-  var url = "http://127.0.0.1:5000/tagtog/init/" + username.value + "/" + password.value + "/" + project.value + "/" + type.value + "/" + cik.value;
+
+  var url =
+    "http://127.0.0.1:5000/tagtog/init/" +
+    username.value +
+    "/" +
+    password.value +
+    "/" +
+    project.value +
+    "/" +
+    type.value +
+    "/" +
+    cik.value;
   // var url = "empty"
-  if (pre.value !== "") { 
+  if (pre.value !== "") {
     // url = "not_empty"
-    url = "http://127.0.0.1:5000/tagtog/init/" + username.value + "/" + password.value + "/" + project.value + "/" + type.value + "/" + cik.value + "/" + pre.value + "/" + post.value;
+    url =
+      "http://127.0.0.1:5000/tagtog/init/" +
+      username.value +
+      "/" +
+      password.value +
+      "/" +
+      project.value +
+      "/" +
+      type.value +
+      "/" +
+      cik.value +
+      "/" +
+      pre.value +
+      "/" +
+      post.value;
   }
 
   // var url = "localhost:5000/tagtog/init/" + username.value + "/" + password.value + "/" + project.value;
 
   // var url = "localhost:5000/tagtog/init/" + username.value + "/" + password.value + "/" + project.value + "/" + type.value + "/" + cik.value + "/" + pre.value + "/" + post.value;
 
-  fetch(url) 
-  
-  var url = "http://www.tagtog.net/" + username.value + "/" + project.value + "/"
-  fetch(url) 
-  window.open(
-    url,
-    "_blank"
-  ); 
-  
+  fetch(url);
 
+  var url =
+    "http://www.tagtog.net/" + username.value + "/" + project.value + "/";
+  fetch(url);
+  window.open(url, "_blank");
 });
